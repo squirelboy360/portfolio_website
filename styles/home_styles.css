@@ -1,25 +1,65 @@
 .body{
     margin-top: 80px;
-    background-color:  rgb(230,254,225);
+    background-color:  rgb(57, 57, 57);
+}
+.presenter-wrapper{
+    align-items: center;
+    border-radius: 20px;
+    margin: 2%;
+    max-width: 30%;
+    max-height: 30%;
+    min-width: 30%;
+    background-color: rgb(230,254,225);
+}
+
+.over-mij-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.presentatie-titel{
+    color: black;
+    font-size: xx-large;
+    text-align: left;
+    padding-left: 0.8%;
+}
+
+.presentatie-tekst{
+    color: blue;
+    font-size: large;
+    text-align: center;
 }
 
 .content {
+    font-family: fantasy;
+    background-image: url(/assets/bg.jpg);
+    background-size: cover;
     position: relative;
-    z-index: 1; 
-    align-items: center;
+    /* z-index: 1;  */
 }
 
 .intro-text-wrapper{
+    /* margin-top: 20%; */
+    z-index: 1;
     font: 1em sans-serif;
     text-decoration: solid;
-    color: rgb(9, 14, 52);
+    /* color: rgb(9, 14, 52); */
+    color: white;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     font-style: normal;
+    align-items: center;
 }
 
 .description-title-wrapper{
-    font-size: xxx-large; 
-    font-weight: 600;
+    z-index: 1;
+    font-size: 4.5rem; 
+}
+
+.description-wrapper{
+    font-size: 2rem; 
 }
 
 
@@ -40,8 +80,9 @@
 }
 
 
-.socialsWrapper img:hover{
-    display: flexbox;
+.socialsWrapper img :hover{
+    position: relative;
+    display: flex;
     padding: 10px;
     width: 25px; 
     height: 25px; 
