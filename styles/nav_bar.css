@@ -1,0 +1,69 @@
+.body{
+    padding: 0;
+    margin: 0;
+}
+.navBar{
+    top: 0; /* Position it at the top of the viewport */
+    left: 0;
+    right: 0; /* Stretch it across the entire width */
+    position: fixed;
+    z-index: 100; /* Ensure it's above other page content */
+    /****/
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    font: 1em sans-serif;
+    justify-content: space-between;
+    height: 80px;
+    background-color: rgb(230,254,225);
+}
+.mainWrapper{
+    margin-top: 80px;
+}
+.socialsWrapper img {
+    position: relative;
+    display: flexbox;
+    padding: 10px;
+    width: 30px; 
+    height: 30px; 
+}
+
+
+.button1{ 
+    border-color: rgb(36, 191, 28) ;
+    border-width: 1.5px;
+    background-color: rgb(230,254,225);
+    height: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    text-decoration-style: solid;
+    margin-right: 10px;
+    color: rgb(36, 191, 28) ;
+}
+
+.link{
+    font-style: normal;
+    padding-right: 20px;
+    color: grey;
+    user-select: none;
+    text-decoration: solid;
+}
+
+.link:hover{
+    color: rgb(67,89,232);
+}
+
+.button1:hover{
+    border-width: 0px;
+    border: 0px;
+    color: white;
+    background-color: rgb(94,177,90);
+}
+
+.socialsWrapper img:hover{
+    display: flexbox;
+    padding: 10px;
+    width: 35px; 
+    height: 35px; 
+}
