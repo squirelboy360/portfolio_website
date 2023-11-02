@@ -1,5 +1,12 @@
-//Test js code for screen population
+// voeg de navBarDark toe navBar
+const header = document.querySelector('.navBar');
 
-for(let i = 0;i!=10;i++){
-    document.write("Hello world");
+window.onscroll = function(){
+    var top = window.scrollY;
+
+    if(top >=100){
+        header.classList.add('navBarDark')
+    }else{
+        header.classList.remove('navBarDark');
+    }
 }

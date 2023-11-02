@@ -2,49 +2,17 @@
     margin-top: 80px;
     background-color:  rgb(230,254,225);
 }
-.video-bg{
-    display: flex;
-   
-    flex-direction: row;
-    align-items: center;    
-    background-color: rgb(230,254,225);
-    max-width: 100%;
-    max-height: 100;
-    overflow: hidden;
-}
-.video{
-    position: relative;
-    float: right;
-    top: 0;
-    left: 0;
-    max-width: 50%;
-    max-height: 50%;
-}
 
 .content {
     position: relative;
     z-index: 1; 
+    align-items: center;
 }
 
-.downloadButton2{
-    margin-top: 30px;
-    font-style: normal;
-    border-width: 0px;
-    height: 50px;
-    width: 200px;
-    text-align: center;
-    color: white;
-    border-radius: 8px;
-    text-decoration-style: solid;
-    background-color: rgb(36, 191, 28) ;
-}
 .intro-text-wrapper{
     font: 1em sans-serif;
-    padding-inline-start: 8%;
     text-decoration: solid;
     color: rgb(9, 14, 52);
-    display: flex;
-    flex-direction: column;
     text-align: center;
     font-style: normal;
 }
@@ -55,26 +23,26 @@
 }
 
 
-.navWrapper{
-    display: flexbox;
-    flex-direction: row;
-    align-items: center;
+.socialsWrapper img {
     position: relative;
-    
+    display: flexbox;
+    padding: 10px;
+    width: 20px; 
+    height: 20px; 
 }
 
-.navButtons{
-    background-color: transparent;
-    font-size: xx-large;
-    border-radius: 360px;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-}
-/* hover animaties */
-.navButtons:hover{
-    border-radius: 360px;
-    color: white;
-    background-color: rgb(36, 191, 28) ;
+.repository-img-wrapper{
+    position: relative;
+    display: flexbox;
+    padding: 10px;
+    width: 30px; 
+    height: 30px; 
 }
 
+
+.socialsWrapper img:hover{
+    display: flexbox;
+    padding: 10px;
+    width: 25px; 
+    height: 25px; 
+}

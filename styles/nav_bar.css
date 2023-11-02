@@ -3,14 +3,13 @@
     margin: 0;
 }
 .navBar{
-    top: 0; /* Position it at the top of the viewport */
+    top: 0; 
     left: 0;
-    right: 0; /* Stretch it across the entire width */
+    right: 0;
     position: fixed;
     z-index: 100; /* Ensure it's above other page content */
     /****/
     display: flex;
-    margin-left: 20px;
     align-items: center;
     font: 1em sans-serif;
     justify-content: space-between;
@@ -20,19 +19,12 @@
 .mainWrapper{
     margin-top: 80px;
 }
-.socialsWrapper img {
-    position: relative;
-    display: flexbox;
-    padding: 10px;
-    width: 30px; 
-    height: 30px; 
-}
 
 
 .button1{ 
     border-color: rgb(36, 191, 28) ;
     border-width: 1.5px;
-    background-color: rgb(230,254,225);
+    background-color: transparent;
     height: 50px;
     text-align: center;
     color: white;
@@ -54,16 +46,14 @@
     color: rgb(67,89,232);
 }
 
-.button1:hover{
+.button1:hover,.theme-button:hover{
     border-width: 0px;
     border: 0px;
     color: white;
     background-color: rgb(94,177,90);
 }
 
-.socialsWrapper img:hover{
-    display: flexbox;
-    padding: 10px;
-    width: 35px; 
-    height: 35px; 
+
+.navBar.navBarDark{
+    background-color: aquamarine;
 }
