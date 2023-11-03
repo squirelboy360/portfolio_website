@@ -1,0 +1,15 @@
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: blue;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}

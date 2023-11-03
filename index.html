@@ -6,146 +6,291 @@
   <link rel="stylesheet" href="styles/nav_bar.css">
   <link rel="stylesheet" href="styles/home_styles.css">
   <link rel="stylesheet" href="styles/over_mij_styles.css">
+  <link rel="stylesheet" href="styles/diensten_styles.css">
+  <link rel="stylesheet" href="styles/portfolio_styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Tahiru Agbanwa™ | SqrlBoy</title>
 </head>
 
 <body class="body content ">
-    <!-- Navigation Bar -->
-    <nav class="navBar">
-      <div>
-        <a href="https://github.com/squirelboy360?tab=repositories" target="_blank" class="link">
-          <img class="repository-img-wrapper" src="https://raw.githubusercontent.com/squirelboy360/colored-icons/ba0f2cbb8690addd525c73d340cc8e46044ee604/icons/github/github.svg
+  <!-- Navigation Bar -->
+  <nav class="navBar">
+    <div>
+      <a href="https://github.com/squirelboy360?tab=repositories" target="_blank" class="link">
+        <img class="git-logo" src="https://raw.githubusercontent.com/squirelboy360/colored-icons/ba0f2cbb8690addd525c73d340cc8e46044ee604/icons/github/github.svg
         " alt="Github open source projects"></a>
-      </div>
-      <div>
-        <a class="link" href="#home">Home</a>
-        <a class="link" href="#over">Over</a>
-        <a class="link" href="#diensten">Diensten</a>
-        <a class="link" href="#portfolio">Portfolio</a>
-        <button class="button1" type="button" onclick="{alert('')}">Stuur een
-          bericht</button>
-        <button class="button1" type="button" onclick="{alert('')}"><img src="/assets/menu.svg" alt=""></button>
-    </nav>
+    </div>
+    <div class="menu-toggle" id="menuToggle" style="font-size: xxx-large;">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a class="link" href="#home">Home</a></li>
+      <li><a class="link" href="#over">Over</a></li>
+      <li><a class="link" href="#diensten">Diensten</a></li>
+      <li><a class="link" href="#portfolio">Portfolio</a></li>
+      <li> <a class="btn btn-secondary" href="#contact">Stuur mij een bericht</a>
+      </li>
+    </ul>
+  </nav>
 
-    <!-- home section -->
-    <section id="home">
+  <!-- home section -->
+  <section id="home">
 
-      <div class>
-        <div class="intro-text-wrapper">
-          <div class="description-title-wrapper">
-            <!-- Een kort verhaal over mij 🔖 -->
-            Hi,Ik ben het Tahiru
-          </div>
-          <div class="description-wrapper">
-            Ik ben een professional flutter freelancer in Rotterdam.
+    <div>
+      <div class="intro-text-wrapper">
+        <div class="description-title-wrapper">
+          Hi,Ik ben het Tahiru
+        </div>
+        <div class="description-wrapper">
+          Ik ben een professional flutter freelancer in Rotterdam.
+        </div>
+        <div class="over-mij-wrapper row">
+          <div class="presenter-wrapper col-lg-4 mt-4">
+            <strong class="presentatie-titel">Doelen 🚀🏆🎯</strong>
+            <p>
+            <div class="presentatie-tekst">
+              <li>
+                Eigen bedrijf starten (start-up)
+              </li>
 
-          </div>
-          <div class="over-mij-wrapper">
-            <div class="presenter-wrapper">
-              <strong class="presentatie-titel">Doelen 🚀🏆🎯</strong>
-              <p>
-              <div class="presentatie-tekst">
-                <li>
-                  Eigen bedrijf starten (start-up)
-                </li>
-
-              </div>
-              </p>
             </div>
-            <video preload="auto" autoplay loop muted class="presenter-wrapper">
-              <source src="assets/me.mp4">
-            </video>
-            <div class="presenter-wrapper">
-              <strong class="presentatie-titel">Vaardigheden 🙌🥇💯🔑</strong>
-              <p>
-              <div class="presentatie-tekst">
-                <li>
-                  Flutter App Ontwinkeling
-                </li>
-                <li>
-                  Mockup Ontwerpen
-                </li>
-                <li>
-                  HTML en CSS(Web)
-                </li>
-                <li>
-                  Javascript
-                </li>
-                <li>
-                  Git en Github
-                </li>
-                <li>
-                  presentatie-titel
-                </li>
-              </div>
-              </p>
+            </p>
+          </div>
+          <video preload="auto" autoplay loop muted class="presenter-wrapper col-lg-4 mt-4">
+            <source src="assets/me.mp4">
+          </video>
+          <div class="presenter-wrapper col-lg-4 mt-4">
+            <strong class="presentatie-titel">Vaardigheden 🙌🥇💯🔑</strong>
+            <p>
+            <div class="presentatie-tekst">
+              <li>
+                Flutter App Ontwinkeling ✅
+              </li>
+              <li>
+                Mockup Ontwerpen ✅
+              </li>
+              <li>
+                HTML en CSS(Web) ✅
+              </li>
+              <li>
+                dart en javascript ✅
+              </li>
+              <li>
+                Git en Github ✅
+              </li>
             </div>
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--over sectie  -->
-    <section id="over" class="over-mij-container">
-      <h1 class="title">Over Mij</h1>
-      <div class="row">
-       <div>
-         <img src="/assets/me.png" alt="Dat ben ik" class="foto">
-       </div>
-        <div class=".over-tekst-wrapper">
-          <p>
-            Ik ben een gepassioneerde 17-jarige autodidactische programmeur met een flair voor het creëren van innovatieve oplossingen door middel van Flutter-ontwikkeling. Mijn reis in de wereld van het coderen begon met een brandende nieuwsgierigheid en een droom om mijn ideeën werkelijkheid te laten worden.
-        </p>
-    
-        <h2>Mijn Reis</h2>
+  <!--over sectie  -->
+  <section id="over" class="over-mij-container">
+    <h1 class="title">Over Mij 🤗</h1>
+    <div class="row">
+        <img src="/assets/me.png" alt="Dat ben ik" class="foto col-lg-4 mt-4">
+      <div class="over-tekst-wrapper col-lg-4 mt-4">
         <p>
-            Voordat ik in de wereld van Flutter dook, heb ik mijn programmeervaardigheden aangescherpt door verschillende talen te verkennen tijdens mijn vorige schooljaren. Deze vroege ervaringen legden de basis voor mijn reis en voedden mijn verlangen om te creëren, te innoveren en de norm te verstoren.
+          Ik ben een gepassioneerde 17-jarige autodidactische programmeur met een flair voor het creëren van innovatieve
+          oplossingen door middel van Flutter-ontwikkeling. Mijn reis in de wereld van het coderen begon met een
+          brandende nieuwsgierigheid en een droom om mijn ideeën werkelijkheid te laten worden.
         </p>
-    
-        <h2>Flutter-expertise</h2>
+
+        <h2>Mijn Reis 🚀</h2>
         <p>
-            Nu ligt mijn focus op Flutter en ik heb verschillende projecten gebouwd die mijn vaardigheden en creativiteit laten zien. Flutter's veelzijdigheid en expressieve ontwerp hebben me in staat gesteld om mijn ideeën tot leven te brengen op manieren waar ik alleen maar van had kunnen dromen. Van het maken van boeiende mobiele apps tot webapplicaties, ik heb de eindeloze mogelijkheden ontdekt die dit framework biedt.
+          Voordat ik in de wereld van Flutter dook, heb ik mijn programmeervaardigheden aangescherpt door verschillende
+          talen te verkennen tijdens mijn vorige schooljaren. Deze vroege ervaringen legden de basis voor mijn reis en
+          voedden mijn verlangen om te creëren, te innoveren en de norm te verstoren.
         </p>
-    
+
+        <h2>Flutter-expertise ✅</h2>
+        <p>
+          Nu ligt mijn focus op Flutter en ik heb verschillende projecten gebouwd die mijn vaardigheden en creativiteit
+          laten zien. Flutter's veelzijdigheid en expressieve ontwerp hebben me in staat gesteld om mijn ideeën tot
+          leven te brengen op manieren waar ik alleen maar van had kunnen dromen. Van het maken van boeiende mobiele
+          apps tot webapplicaties, ik heb de eindeloze mogelijkheden ontdekt die dit framework biedt.
+        </p>
+
         <h2>Ondernemende aspiraties</h2>
         <p>
-            Naast programmeren wil ik een tastbare impact hebben op de wereld. Ik geloof in de kracht van technologie om de toekomst vorm te geven en een van mijn ambities is om een startup te maken van een van mijn apps. Ik ben enthousiast over de mogelijkheden om echte problemen op te lossen en waarde te bieden via technologie.
+          Naast programmeren wil ik een tastbare impact hebben op de wereld. Ik geloof in de kracht van technologie om
+          de toekomst vorm te geven en een van mijn ambities is om een startup te maken van een van mijn apps. Ik ben
+          enthousiast over de mogelijkheden om echte problemen op te lossen en waarde te bieden via technologie.
         </p>
-    
-        <h2>Waarom ik anders ben</h2>
+
+        <h2>Waarom ik anders ben 🤷‍♂️</h2>
         <p>
-            Wat mij onderscheidt is niet alleen mijn leeftijd, maar ook mijn drive om voortdurend te leren en te innoveren. Ik ben niet beperkt door formeel onderwijs of traditionele paden; ik gedij bij uitdagingen en ben vastbesloten om ze te overwinnen. Mijn vermogen om buiten de gebaande paden te denken, me aan te passen en uitzonderlijke oplossingen te creëren is wat mij definieert.
+          Wat mij onderscheidt is niet alleen mijn leeftijd, maar ook mijn drive om voortdurend te leren en te
+          innoveren. Ik ben niet beperkt door formeel onderwijs of traditionele paden; ik gedij bij uitdagingen en ben
+          vastbesloten om ze te overwinnen. Mijn vermogen om buiten de gebaande paden te denken, me aan te passen en
+          uitzonderlijke oplossingen te creëren is wat mij definieert.
         </p>
-    
-        <h2>Reis met me mee</h2>
+
+        <h2>Reis met me mee 🛸👨‍💻</h2>
         <p>
-            Ik nodig je uit om mijn portfolio te verkennen, waar je een showcase van mijn projecten kunt vinden en zelf kunt zien hoe ik grenzen verleg en ideeën omzet in realiteit. Of je nu een ondernemer bent die wil samenwerken of iemand die gewoon de magie van code waardeert, laten we in contact komen en bespreken hoe we samen een verschil kunnen maken.
+          Ik nodig je uit om mijn portfolio te verkennen, waar je een showcase van mijn projecten kunt vinden en zelf
+          kunt zien hoe ik grenzen verleg en ideeën omzet in realiteit. Of je nu een ondernemer bent die wil samenwerken
+          of iemand die gewoon de magie van code waardeert, laten we in contact komen en bespreken hoe we samen een
+          verschil kunnen maken.
         </p>
-    
+
         <p>
-            Bedankt voor het bezoeken van mijn portfolio en ik kijk uit naar de spannende mogelijkheden en uitdagingen die in het verschiet liggen op deze opmerkelijke reis van codering en innovatie.
+          Bedankt voor het bezoeken van mijn portfolio en ik kijk uit naar de spannende mogelijkheden en uitdagingen die
+          in het verschiet liggen op deze opmerkelijke reis van codering en innovatie.
         </p>
+      </div>
+    </div>
+  </section>
+  <!-- diensten section-->
+  <section id="diensten">
+    <div class="container">
+      <h1 class="text-center">Diensten</h1>
+      <div class="row">
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class="fas servicesIcon fa-clock"></i>
+              <h4 class="card-title mt-3">Website Ontwikkeling</h4>
+              <p class="card-text mt-3">Ik ontwikkel websites voornamelijk met css, javascript, html en bootstrap.
+                Ik bouw ook webapps met technologieën zoals flutter web.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class='fas servicesIcon fa-layer-group'></i>
+              <h4 class="card-title mt-3">Website Design</h4>
+              <p class="card-text mt-3">Met behulp van tekenprogramma's zoals Corel Draw voor drawaing of frameworks
+                zoals Flutter voor UI-experimenten en Figma kan ik een voorbeeldwebsite ontwerpen voordat ik deze zelfs
+                ga bouwen.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class='far servicesIcon fa-check-circle'></i>
+              <h4 class="card-title mt-3">Desktop App Ontwikkeling</h4>
+              <p class="card-text mt-3">Ik kan Windows-, Linux- en Macos-apps bouwen met de meest geavanceerde
+                technologie door flutter en platform-native code te mixen, zodat je heel snel een desktop-app krijgt.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <footer>
-      <!-- social wrapper voor mijn social media links -->
-      <div class="socialsWrapper">
-        <a href="https://instagram.com/t.ahiro" target="_blank">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
-            alt="Instagram" /></a>
-        <a href="https://twitter.com/squirelboy360" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="X">
-        </a>
-        <a href="https://www.linkedin.com/in/tahiru-agbanwa" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="linkedin">
-        </a>
+      <div class="row">
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class='fas servicesIcon fa-search'></i>
+              <h4 class="card-title mt-3">IOS en Android App Ontwikkeling</h4>
+              <p class="card-text mt-3">Ik kan native maar platformonafhankelijke apps bouwen in flutter, waardoor ik de
+                kosten van het ontwikkelen op aparte platforms bespaar.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class='fas servicesIcon fa-wrench'></i>
+              <h4 class="card-title mt-3">QA</h4>
+              <p class="card-text mt-3">Ik sta 24/7 klaar voor vragen en antwoorden. Stuur me gerust een bericht via
+                mijn website of e-mail.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio-wrapper">
+    <h1 class="title">Mijn Projecten</h1>
+    <div class="portfolio-wrapper-button">
+      <a href="https://github.com/squirelboy360" target="_blank" class="link" style="color: black; font-size: x-large;">
+        <img class="git-logo" src="https://raw.githubusercontent.com/squirelboy360/colored-icons/ba0f2cbb8690addd525c73d340cc8e46044ee604/icons/github/github.svg
+        " alt="Github open source projects"> Klik hier om portfolio te bekijken</a>
+    </div>
+  </section>
+
+   <!-- Contact section -->
+   <section class="contact" id="contact">
+    <h2 style="color: azure;">Stuur een bericht</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/moqobdkn" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="naam"
+              name="sender-naam"
+              placeholder="vul je naam in"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="sender-email"
+              placeholder="E-mail"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="bericht"></label>
+            <textarea
+              id="message"
+              cols="60"
+              rows="10"
+              placeholder="Bericht"
+              name="message"
+              class="input-field"
+              required
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            value="Submit"
+            id="submit-btn"
+            class="submit-btn btn btn-primary"
+          />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <!-- social wrapper voor mijn social media links -->
+    <div class="socialsWrapper">
+      <a href="https://instagram.com/t.ahiro" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+          alt="Instagram" /></a>
+      <a href="https://twitter.com/squirelboy360" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="X">
+      </a>
+      <a href="https://www.linkedin.com/in/tahiru-agbanwa" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="linkedin">
+      </a>
+    </div>
+  </footer>
   </div>
 </body>
 <script src="/scripts/home_scripts.js"></script>
