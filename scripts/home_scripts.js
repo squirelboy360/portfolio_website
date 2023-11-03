@@ -4,7 +4,7 @@ const header = document.querySelector('.navBar');
 window.onscroll = function(){
     var top = window.scrollY;
 
-    if(top >=150){
+    if(top >=100){
         header.classList.add('navBarDark')
     }else{
         header.classList.remove('navBarDark');
