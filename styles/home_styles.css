@@ -37,7 +37,7 @@
 
 .content {
     background-image: url('https://wallpapercave.com/wp/wp9827062.jpg');
-    background-size: cover;
+    background-size: contain;
     position: relative;
     /* z-index: 1;  */
 }
